@@ -1,0 +1,93 @@
+html, body, section {
+	margin: 0;
+	font-size: 28pt;
+}
+
+html {
+	font-family: "mathleteskinny";
+}
+
+h2 {
+	font-size: 0.5em;
+	font-weight: bold;
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+#main, #bottom {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	position: relative;
+}
+
+section {
+	transition: all 0.1s;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	width: 250px;
+	height: 205px;
+	border-radius: 3px;
+	opacity: 0.9;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#main section.active {
+	opacity: 1;
+}
+
+#blogs {
+	background-color: rgb(255, 150, 50);
+}
+
+#comics {
+	background-color: rgb(150, 255, 50);
+}
+
+#etc {
+	background-color: rgb(230, 255, 50);
+}
+
+a {
+	color: rgb(20, 80, 60);
+	text-decoration: none;
+	display: block;
+	transition: color 1s;
+}
+
+a.active {
+	/*color: rgb(100, 150, 250);*/
+	font-weight: bold;
+	color: rgb(0, 60, 40);
+}
+
+@media (max-width: 960px) {
+	section {
+		display: block;
+		width: auto;
+		height: auto;
+		margin: 0;
+		margin-bottom: 5px;
+	}
+
+	#main {
+		padding: 0;
+	}
+}
+
+@media (min-width: 961px) {
+	section.active {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-top: -5px;
+		margin-bottom: 10px;
+	}
+}
